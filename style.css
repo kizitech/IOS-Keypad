@@ -19,7 +19,7 @@
     --color-grey: #343434;
     --color-blue: #5151f4; 
     --color-red: #f70000;
-    --color-transparent: rgba(255, 255, 255, 0.144);
+    --color-transparent: rgba(255, 255, 255, 0.096);
 }
 
 body {
@@ -51,6 +51,7 @@ body {
 
 .active .container {
     filter: blur(20px);
+    box-shadow: none;
 }
 
 
