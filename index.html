@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="kizitech-favicon.png" type="image/x-icon">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My IOS Keypad</title>
+</head>
+<body>
+    <section class="container">
+        <section class="result">
+            <span></span>
+        </section>
+        <section class="add-number">
+           <a href="#">Add Number</a>
+        </section>
+        <section class="buttons">
+            <button id="num" class="item"> <span>1</span> </button>
+            <button id="num" class="item"> <span>2</span> <p>DEF</p> </button>
+            <button id="num" class="item"> <span>3</span> <p>ABC</p> </button>
+            <button id="num" class="item"> <span>4</span> <p>GHI</p> </button>
+            <button id="num" class="item"> <span>5</span> <p>JKL</p> </button>
+            <button id="num" class="item"> <span>6</span> <p>MNO</p> </button>
+            <button id="num" class="item"> <span>7</span> <p>PQRS</p> </button>
+            <button id="num" class="item"> <span>8</span> <p>TUV</p> </button>
+            <button id="num" class="item"> <span>9</span> <p>WXYZ</p> </button>
+            <button id="num" class="item"> <span><h1>*</h1></span> </button>
+            <button id="num" class="item"> <span>0</span> <p>+</p> </button>
+            <button id="num" class="item"> <span>#</span></button>
+            <button id="call" class="item phone calling"> <iconify-icon icon="fluent:call-28-filled" style="color: white;"></iconify-icon> </button>
+            <button id="cancel" class="item cancel">x</button>
+        </section>
+    </section>
+
+
+    <!-- POP UP SECTION -->
+    <section id="pop-up" class="pop-up">
+        <div class="pop-up-container">
+            <section class="result-two">
+                <span></span>
+                <p>Calling...</p>
+            </section>
+
+            <section class="call-options">
+                <div class="icon-container">
+                    <div class="icon item"><iconify-icon icon="bi:mic-mute-fill"></iconify-icon></div>
+                    <div class="icon-text"><p>mute</p></div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon item"><iconify-icon icon="eva:keypad-fill"></iconify-icon></div>
+                    <div class="icon-text"><p>keypad</p></div>
+                </div>
+                
+                <div class="icon-container">
+                    <div class="icon item"><iconify-icon icon="wpf:speaker"></iconify-icon></div>
+                    <div class="icon-text"><p>speaker</p></div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon item"><iconify-icon icon="ph:plus-bold"></iconify-icon></div>
+                    <div class="icon-text"><p>add call</p></div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon item"><iconify-icon icon="mingcute:camcorder-fill"></iconify-icon></div>
+                    <div class="icon-text"><p>FaceTime</p></div>
+                </div>
+
+                <div class="icon-container">
+                    <div class="icon item"><iconify-icon icon="basil:contacts-outline"></iconify-icon></div>
+                    <div class="icon-text"><p>contacts</p></div>
+                </div>
+
+                    <button id="call" class="item phone call-end"> <iconify-icon icon="fluent:call-end-16-filled" style="color: white;"></iconify-icon> </button>
+
+                </div>
+            </section> 
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

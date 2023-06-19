@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* WEBKIT TO HIDE SCROOL BAR */
+::-webkit-scrollbar {
+    display: none; 
+}
+
+/* BASIC COLOR USED */
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-green: #0da40d;
+    --color-grey: #343434;
+    --color-blue: #5151f4; 
+    --color-red: #f70000;
+    --color-transparent: rgba(255, 255, 255, 0.062);
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #333333;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: var(--color-black);
+    }
+}
+
+
+/* WRAPPER CONTAINER */
+.container {
+    width: 270px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: var(--color-black);
+    box-shadow: 1em 2em 6em var(--color-black);
+}
+
+
+/* THE ADD NUMBER LINK */
+.add-number {
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+
+.add-number a {
+    color: var(--color-blue);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/* RESULT CONTAINER */
+.result {
+    color: var(--color-white);
+    height: 80px;
+    display: grid;
+    padding: 0% 10%;
+    justify-content: center;
+    place-items: flex-end;
+}
+
+.result-two {
+    color: var(--color-white);
+    height: 80px;
+    display: grid;
+    padding: 0% 10%;
+    justify-content: center;
+    place-items: flex-end;
+}
+
+/* RESULT TEXTCONTENT */
+.result span {
+    display: grid;
+    font-size: 35px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.result-two span {
+    display: grid;
+    font-size: 35px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.result-two p {
+    margin: auto;
+}
+
+
+/* NUMBERS BUTTON CONTAINER */
+.buttons {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-columns: repeat(3, 70px);
+}
+
+
+/* ALL BUTTON AND THE ALPHABETS */
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 10px;
+    color: var(--color-white);
+    border-radius: 100%;
+    border: none;
+    margin: 8px 10px;
+    width: 58px;
+    height: 58px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--color-grey);
+    transition: transform  100ms;
+}
+
+/* ACTIVE STATE FOR BUTTONS */
+.item:active {
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+
+/* THE NUMBERS */
+.item span {
+    font-size: 25px;
+}
+
+
+/* THE ALPHABETS */
+.item p {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+/* THE GREEN CALL BUTTON */
+.phone {
+    background-color: var(--color-green);
+    grid-row: 5/5;
+    grid-column: 2;
+}
+
+/* WHEN THE ACTION WHEN CALLING */
+.active .calling {
+    display: none;
+}
+
+
+/* PHONE ICON */
+.phone iconify-icon {
+    font-size: 30px;
+}
+
+
+/* CALL ICON */
+button i {
+    font-size: 25px;
+}
+
+
+/* THE CLEAR BUTTON */
+.cancel {
+    grid-row: 5/5;
+    grid-column: 3;
+    width: 45px;
+    height: 35px;
+    margin-top: 25px;
+    place-items: center;
+    font-size: 17px;
+    border-radius: 0;
+    padding-top: 1px;
+    color: var(--color-white);
+    background-color: var(--color-grey);
+    clip-path: polygon(25% 4%, 81% 4%, 81% 67%, 27% 68%, 0 33%);
+}
+
+
+
+
+/* POP UP  SECTION*/
+.pop-up {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    place-items: center;
+    color: var(--color-white);
+    backdrop-filter: blur(20px);
+    transition: opacity 300ms;
+}
+
+.active .pop-up {
+    opacity: 1;
+    display: grid;
+}
+
+
+/* CALLING CONTAINER */
+.pop-up-container {
+    width: 270px;
+    height: 500px;
+    overflow: hidden;
+    place-items: center;
+}
+
+
+/* CALLING OPTIONS */
+.call-options {
+    display: grid;
+    margin: 50px 0px;
+    row-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* CALLING OPTIONS ICON CONTAINER */
+.pop-up .icon-container {
+    display: grid;
+    place-items: center;
+}
+
+/* CALLING OPTIONS ICON CONTAINER ICON BOX*/
+.pop-up .icon-container .icon {
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    place-items: center;
+    background-color: var(--color-transparent);
+}
+
+/* CALLING OPTIONS ICON CONTAINER ICON */
+.pop-up .icon-container .icon iconify-icon {
+    color: var(--color-white);
+    font-size: 25px;
+}
+
+/* CALLING OPTIONS ICON CONTAINER TEXT */
+.pop-up .icon-container .icon-text {
+    font-size: 13px;
+}
+
+/* END CALL BUTTON */
+.pop-up .call-end {
+    background-color: var(--color-red);
+}
