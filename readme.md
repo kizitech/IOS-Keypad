@@ -1,4 +1,4 @@
-# iOS Keypad
+# IOS Keypad
 
 This readme file provides an overview and instructions for using the iOS Keypad, a virtual keypad built using HTML, CSS, and JavaScript.
 
