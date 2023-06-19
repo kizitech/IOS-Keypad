@@ -7,7 +7,8 @@ This readme file provides an overview and instructions for using the iOS Keypad,
 
 ![The screenshot of the keypad site after dialing](screenshot-after-dialing.JPG)
 
-### Links
+
+## Links
 
 - Live Site URL: [Live site URL here](https://kizitech.github.io/IOS-Keypad/)
 
