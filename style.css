@@ -107,7 +107,7 @@ body {
     display: grid;
     place-content: center;
     width: 100%;
-    grid-template-columns: repeat(3, 70px);
+    grid-template-columns: repeat(3, 80px);
 }
 
 
