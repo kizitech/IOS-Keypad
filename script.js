@@ -1,5 +1,6 @@
 let active = document.querySelector('body');
 let numbers = document.querySelectorAll('.buttons span')
+let buttons = document.querySelectorAll('button')
 let resultBox = document.querySelector('.result span')
 let resultTwoBox = document.querySelector('.result-two span')
 let cancelBtn = document.querySelector('#cancel')
@@ -13,6 +14,15 @@ numbers.forEach(numbers =>{
     numbers.addEventListener('click',()=>{
         resultBox.textContent +=  numbers.textContent 
         resultTwoBox.textContent =  resultBox.textContent 
+    })
+
+    buttons.forEach(buttons =>{
+        buttons.addEventListener('mousedown',()=>{
+            buttons.style.transform = "scale(0.7)"
+        })
+        buttons.addEventListener('mouseup',()=>{
+            buttons.style.transform = "none"
+        })
     })
 });
 

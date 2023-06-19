@@ -139,12 +139,6 @@ body {
     transition: transform  100ms;
 }
 
-/* ACTIVE STATE FOR BUTTONS */
-.item:active {
-    opacity: 0.8;
-    transform: scale(0.9);
-}
-
 
 /* THE NUMBERS */
 .item span {
