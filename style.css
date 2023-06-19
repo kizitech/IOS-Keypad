@@ -206,8 +206,14 @@ button i {
     position: fixed;
     place-items: center;
     color: var(--color-white);
-    backdrop-filter: blur(20px);
     transition: opacity 300ms;
+    background-color: #57555510;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .pop-up {
+        backdrop-filter: blur(20px);
+    }
 }
 
 .active .pop-up {
