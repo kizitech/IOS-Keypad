@@ -19,7 +19,7 @@
     --color-grey: #343434;
     --color-blue: #5151f4; 
     --color-red: #f70000;
-    --color-transparent: rgba(255, 255, 255, 0.062);
+    --color-transparent: rgba(255, 255, 255, 0.144);
 }
 
 body {
@@ -207,12 +207,11 @@ button i {
     place-items: center;
     color: var(--color-white);
     transition: opacity 300ms;
-    background-color: #57555510;
 }
 
 @supports (backdrop-filter: blur(20px)) {
     .pop-up {
-        backdrop-filter: blur(20px);
+        /* backdrop-filter: blur(20px); */
     }
 }
 
@@ -227,7 +226,9 @@ button i {
     width: 270px;
     height: 500px;
     overflow: hidden;
+    border-radius: 30px;
     place-items: center;
+    background-color: rgba(12, 11, 11, 0.961);
 }
 
 
