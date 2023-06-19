@@ -211,7 +211,7 @@ button i {
 
 @supports (backdrop-filter: blur(20px)) {
     .pop-up {
-        /* backdrop-filter: blur(20px); */
+        backdrop-filter: blur(20px);
     }
 }
 
