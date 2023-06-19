@@ -49,6 +49,10 @@ body {
     box-shadow: 1em 2em 6em var(--color-black);
 }
 
+.active .container {
+    filter: blur(20px);
+}
+
 
 /* THE ADD NUMBER LINK */
 .add-number {
@@ -211,13 +215,7 @@ button i {
     z-index: 1000;
     place-items: center;
     color: var(--color-white);
-    backdrop-filter: blur(20px);
     transition: opacity 300ms;
-}
-
-@supports (backdrop-filter: blur(20px)) {
-    .pop-up {
-    }
 }
 
 .active .pop-up {

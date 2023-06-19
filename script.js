@@ -5,6 +5,7 @@ let resultTwoBox = document.querySelector('.result-two span')
 let cancelBtn = document.querySelector('#cancel')
 let callBtn = document.querySelectorAll('#call')
 let callingBtn = document.querySelector('.calling')
+let container = document.querySelector('.container')
 
 
 // FOR THE NUMBERS TO DISPLAY IN THE RESULT BOX
