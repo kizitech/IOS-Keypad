@@ -50,7 +50,7 @@ body {
 }
 
 .active .container {
-    filter: blur(20px);
+    filter: blur(15px);
     box-shadow: none;
 }
 
