@@ -6,11 +6,6 @@
     box-sizing: border-box;
 }
 
-/* WEBKIT TO HIDE SCROOL BAR */
-::-webkit-scrollbar {
-    display: none; 
-}
-
 /* BASIC COLOR USED */
 :root {
     --color-black: #000000;
@@ -41,8 +36,8 @@ body {
 
 /* WRAPPER CONTAINER */
 .container {
-    width: 270px;
-    height: 500px;
+    width: 17em;
+    height: 33em;
     overflow: hidden;
     border-radius: 30px;
     background-color: var(--color-black);
@@ -79,43 +74,32 @@ body {
     place-items: flex-end;
 }
 
-.result-two {
-    color: var(--color-white);
-    height: 80px;
-    display: grid;
-    padding: 0% 10%;
-    justify-content: center;
-    place-items: flex-end;
-}
-
 /* RESULT TEXTCONTENT */
 .result span {
     display: grid;
     font-size: 35px;
     overflow-x: scroll;
     width: 100%;
+    scrollbar-width: 0;
 }
 
-.result-two span {
-    display: grid;
-    font-size: 35px;
-    overflow-x: scroll;
-    width: 100%;
-}
-
-.result-two p {
-    margin: auto;
+/* WEBKIT TO HIDE SCROOL BAR */
+.result span::-webkit-scrollbar {
+    display: none;
 }
 
 
 /* NUMBERS BUTTON CONTAINER */
 .buttons {
+    width: 100%;
     display: grid;
     place-content: center;
-    width: 100%;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(3, 70px);
 }
 
+.asterisk {
+    padding-top: 0.6em;
+}
 
 /* ALL BUTTON AND THE ALPHABETS */
 .item {
@@ -130,8 +114,8 @@ body {
     border-radius: 100%;
     border: none;
     margin: 8px 10px;
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     cursor: pointer;
     outline: none;
@@ -148,8 +132,9 @@ body {
 
 /* THE ALPHABETS */
 .item p {
-    letter-spacing: 2px;
+    font-size: 7px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 
@@ -226,6 +211,30 @@ button i {
     overflow: hidden;
     border-radius: 30px;
     place-items: center;
+}
+
+.result-two {
+    color: var(--color-white);
+    height: 80px;
+    display: grid;
+    padding: 0% 10%;
+    justify-content: center;
+    place-items: flex-end;
+}
+
+.result-two span {
+    display: grid;
+    font-size: 35px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.result-two span::-webkit-scrollbar {
+    display: none;
+}
+
+.result-two p {
+    margin: auto;
 }
 
 
